@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flutter - Embrace Self-Care</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #f8f9fa, #e3f2fd);
+            color: #3e4a5a;
+        }
+        header {
+            background: #a29bfe;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2.8em;
+            position: relative;
+            border-bottom: 5px solid #81ecec;
+        }
+        header::after {
+            content: '🐧';
+            position: absolute;
+            animation: bounce 4s infinite;
+            bottom: -15px;
+            right: 20px;
+            font-size: 3em;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .logout-btn {
+            position: absolute;
+            right: 10px;
+            top: 80%;
+            transform: translateY(-50%);
+            background-color: #ff4081;
+            color: white;
+            padding: 2px 8px;
+            font-size: 0.4em;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #f50057;
+        }
+
+
+        nav {
+            background: #6c5ce7;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #dfe6e9;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s;
+        }
+        nav a:hover {
+            color: #81ecec;
+            transform: scale(1.1);
+        }
+        .container {
+            width: 85%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        h1 {
+            color: #6c5ce7;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+        .content {
+            background: #ffeaa7;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .content::before {
+            content: '✨';
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            font-size: 1.5em;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        marquee {
+            margin: 20px 0;
+            font-size: 1.2em;
+            color: #d63031;
+            font-weight: bold;
+            background: #fab1a0;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #636e72;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 1em;
+        }
+        footer a {
+            color: #74b9ff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #81ecec;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content"> 🐧 Welcome to Flutter - Embrace Self-Care 🐧</div>
+        <button class="logout-btn" onclick="window.location.href='welcomepage2.html'">Log Out</button>
+    </header>
+
+    <nav>
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+        <a href="games.html">Fun Games & Challenges</a>
+        <a href="recommendation.html">Recommendations</a>
+        <a href="selfcareresources.html">Self-Care Resources</a>
+        <a href="tipsroutines.html">Tips & Routines</a>
+    </nav>
+
+    <div class="container">
+        <!-- About Section -->
+        <div class="content" id="about">
+            <h1>About Flutter</h1>
+            <p>
+                At Flutter, we believe that self-care is not a luxury, it’s a necessity. In a world that moves fast, it’s easy to forget to take care of ourselves. That’s why we created this space to help you reconnect with your inner peace, rejuvenate, and thrive.
+            </p>
+            <p>
+                Whether you’re new to self-care or a seasoned wellness pro, Flutter offers practical resources, community support, and fun activities to help you embrace your journey of well-being. 🐧💖
+            </p>
+        </div>
+
+        <!-- Community Section -->
+        <div class="content" id="community">
+            <h1>Join Our Community</h1>
+            <p>
+                Life is better when we share it with others, especially those who care about their well-being. Our community is filled with inspiring individuals who are passionate about growth, mindfulness, and self-love.
+            </p>
+            <p>
+                Connect with others, share experiences, and participate in supportive challenges. Whether through discussions, group chats, or live events, the Flutter community is here to support you every step of the way. 🫶✨
+            </p>
+            <strong>Featured Activities:</strong>
+            <ul>
+                <li>Weekly live wellness events and webinars</li>
+                <li>Community self-care challenges</li>
+                <li>Group chats to share tips and motivation</li>
+            </ul>
+        </div>
+
+        <!-- Games Section -->
+        <div class="content" id="games">
+            <h1>Fun Games & Challenges</h1>
+            <p>
+                Who says self-care has to be serious all the time? Dive into fun and interactive games that promote relaxation, mindfulness, and creativity. From guided journaling quests to mood-boosting puzzles, we have something for everyone.
+            </p>
+            <p>
+                Challenge yourself and have fun while taking care of your mental health! 🎮🐧
+            </p>
+            <strong>Popular Games:</strong>
+            <ul>
+                <li>Mindfulness Scavenger Hunt</li>
+                <li>Self-Care Bingo</li>
+                <li>Daily Gratitude Journal Prompts</li>
+            </ul>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div class="content" id="recommendations">
+            <h1>Our Top Recommendations</h1>
+            <p>
+                Discover handpicked self-care products, books, and wellness apps that we trust and love. These recommendations are designed to help you recharge, reduce stress, and feel your best.
+            </p>
+            <strong>Favorites:</strong>
+            <ul>
+                <li><strong>Books:</strong> "The Power of Now" by Eckhart Tolle</li>
+                <li><strong>Apps:</strong> Calm, Headspace, and Insight Timer</li>
+                <li><strong>Products:</strong> Aromatherapy oils, skincare sets, and calming teas</li>
+            </ul>
+        </div>
+
+        <!-- Self-Care Resources Section -->
+        <div class="content" id="resources">
+            <h1>Self-Care Resources</h1>
+            <p>
+                We’ve created a collection of free resources designed to help you build a self-care routine that works for you. Access printable planners, guided meditations, and expert articles to support your wellness goals.
+            </p>
+            <strong>Featured Resources:</strong>
+            <ul>
+                <li>Printable Daily Self-Care Planner</li>
+                <li>Mental Health Journaling Templates</li>
+                <li>Guided Meditation and Breathing Exercises</li>
+            </ul>
+        </div>
+
+        <!-- Tips & Routines Section -->
+        <div class="content" id="tips">
+            <h1>Practical Tips & Routines</h1>
+            <p>
+                Kickstart your days with energizing routines or wind down with soothing rituals. From stress-reduction techniques to energizing morning rituals, we’ve got expert advice to guide you toward balance and relaxation.
+            </p>
+            <strong>Our Top Routines:</strong>
+            <ul>
+                <li><strong>Morning Ritual:</strong> Hydrate, stretch, and reflect with a gratitude journal</li>
+                <li><strong>Evening Routine:</strong> Unwind with soothing tea and a digital detox</li>
+                <li><strong>Mindful Breathing:</strong> Try the 4-7-8 technique for stress relief</li>
+            </ul>
+        </div>
+
+        <marquee>💖 Remember: Take a moment for yourself. You deserve it! 💖</marquee>
+    </div>
+    <footer>
+        Contact us at: <a href="mailto:contact@flutter.com">contact@flutter.com</a> | Follow us on social media 🐧
+    </footer>
+
+    <script>
+        window.onload = function() {
+            alert('🎉 Successfully logged in! 🐧💖');
+        }
+    </script>
+</body>
+</html>

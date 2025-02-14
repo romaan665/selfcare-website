@@ -1,0 +1,177 @@
+<html>
+<head>
+    <title>Self-Care Tips & Routines</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #e0f7fa, #80deea);
+            color: #004d40;
+        }
+        header {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .header-content {
+            display: inline-block;
+        }
+
+        .logout-btn {
+            position: absolute;
+            right: 10px;
+            top: 80%;
+            transform: translateY(-50%);
+            background-color: #ff4081;
+            color: white;
+            padding: 2px 8px;
+            font-size: 0.4em;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #f50057;
+        }
+
+        nav {
+            background: light green;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #5d4037;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s;
+        }
+        nav a:hover {
+            color: green;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #00695c;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #80deea;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #b2ebf2;
+            color: #004d40;
+            margin: 10px 0;
+            padding: 12px 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        ul li::before {
+            content: '\1F4CC'; /* 📌 */
+            margin-right: 12px;
+            font-size: 1.4em;
+        }
+        .routine {
+            background: #e0f7fa;
+            padding: 20px;
+            border-left: 5px solid #004d40;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .routine p {
+            margin: 10px 0;
+            color: #004d40;
+        }
+        .mental-health {
+            background: #fffde7;
+            border: 1px solid #ffd54f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004d40;
+            color: white;
+            font-size: 1.2em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer span {
+            font-size: 1.5em;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">Self-Care Tips & Routines</div>
+        <button class="logout-btn" onclick="window.location.href='welcomepage2.html'">Log Out</button>
+    </header>
+    
+    <nav>
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+        <a href="games.html">Fun Games & Challenges</a>
+        <a href="recommendation.html">Recommendations</a>
+        <a href="selfcareresources.html">Self-Care Resources</a>
+        <a href="tipsroutines.html">Tips & Routines</a>
+    </nav>
+
+    <div class="container">
+        <section class="checklist">
+            <h2>Daily, Weekly, and Monthly Self-Care Checklists</h2>
+            <ul>
+                <li>Take a 10-minute morning walk</li>
+                <li>Drink enough water</li>
+                <li>Schedule a weekly "me-time" session</li>
+                <li>Declutter your workspace monthly</li>
+                <li>Practice gratitude journaling</li>
+            </ul>
+        </section>
+        <section class="routine">
+            <h2>Morning & Night Routines</h2>
+            <p><strong>Morning:</strong> Start your day with a warm cup of tea, stretch for 5 minutes, and review your goals.</p>
+            <p><strong>Night:</strong> Turn off screens 30 minutes before bed, read a calming book, and reflect on your day.</p>
+        </section>
+        <section class="mental-health">
+            <h2>Mental Health Tips</h2>
+            <p>Manage stress by practicing mindfulness for 5 minutes daily. Take deep breaths, count to ten, and focus on the present. Avoid over-scheduling, and remember to seek help when feeling overwhelmed.</p>
+        </section>
+    </div>
+    
+    <footer>
+        Take care of yourself — you deserve it! <span>&#129419;</span>
+    </footer>
+</body>
+</html>

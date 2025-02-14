@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Care Challenges & Games</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #e8f5e9, #c8e6c9);
+            color: #2e7d32;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2e7d32;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            position: relative; /* Make the header position relative to place the button */
+        }
+        .logout-btn {
+            position: absolute;
+            right: 10px;
+            top: 80%;
+            transform: translateY(-50%);
+            background-color: #ff4081;
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.4em;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #f50057;
+        }
+
+        nav {
+            background: light green;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #5d4037;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s;
+        }
+        nav a:hover {
+            color: green;
+            transform: scale(1.1);
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            width: 90%;
+            margin: 40px auto;
+        }
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .section h2 {
+            font-size: 2em;
+            color: #388e3c;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #dcedc8;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        ul li:hover {
+            background-color: #b9e6b6;
+        }
+        ul li span {
+            font-size: 2em;
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #388e3c;
+        }
+        a:hover {
+            color: #1b5e20;
+        }
+        footer {
+            margin-top: 40px;
+            background: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">Self-Care Challenges & Games 🌟</div>
+        <button class="logout-btn" onclick="window.location.href='welcomepage2.html'">Log Out</button>
+    </header>
+
+    <nav>
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+        <a href="games.html">Fun Games & Challenges</a>
+        <a href="recommendation.html">Recommendations</a>
+        <a href="selfcareresources.html">Self-Care Resources</a>
+        <a href="tipsroutines.html">Tips & Routines</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="section">
+            <h2>🎯 Fun Self-Care Challenges</h2>
+            <ul>
+                <li>
+                    <span>📝</span>
+                    <strong>30-Day Journaling Challenge</strong>: Write a daily journal entry to reflect on your thoughts, emotions, or just jot down something you're grateful for.
+                </li>
+                <li>
+                    <span>🚶‍♀️</span>
+                    <strong>10,000 Steps a Day for a Week</strong>: Set yourself a daily goal of 10,000 steps for a week—perfect for boosting both your mood and your health.
+                </li>
+                <li>
+                    <span>📚</span>
+                    <strong>Read One Book a Month</strong>: Dive into a new book each month and experience different worlds, stories, and perspectives.
+                </li>
+                <li>
+                    <span>💧</span>
+                    <strong>Stay Hydrated</strong>: Aim to drink 8 glasses of water daily. Staying hydrated is one of the easiest ways to feel better!
+                </li>
+                <li>
+                    <span>💤</span>
+                    <strong>Consistent Sleep Schedule for 10 Days</strong>: Commit to a regular sleep schedule for 10 days and feel more energized and rested.
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🎮 Interactive Games</h2>
+            <ul>
+                <li><span>🌸</span> <a href="meomory.html">Mindful Garden: A Meditation Game</a></li>
+                <li><span>🧩</span> <a href="puzzle.html">Puzzle of Positivity</a></li>
+                <li><span>X</span> <a href="xo.html">Tic-tac-toe</a></li>
+                <li><span>🕹️</span> <a href="breath.html">Breathe & Relax: Breathing Exercises Game</a></li>
+                <li><span>🎨</span> <a href="color.html">Paint: color your stress away</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        Take a moment for yourself with these fun challenges and games! 🌈
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Puzzle</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        #puzzle { display: grid; grid-template-columns: repeat(4, 100px); gap: 5px; justify-content: center; margin: 20px auto; }
+        .piece { width: 100px; height: 100px; background-color: #4caf50; color: white; display: flex; justify-content: center; align-items: center; font-size: 24px; cursor: pointer; }
+        .empty { background-color: #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Slide Puzzle</h1>
+    <div id="puzzle"></div>
+    <script>
+        const puzzle = document.getElementById('puzzle');
+        const grid = [...Array(16).keys()];
+        grid.sort(() => Math.random() - 0.5);
+
+        function renderGrid() {
+            puzzle.innerHTML = '';
+            grid.forEach((value, i) => {
+                const piece = document.createElement('div');
+                piece.className = value === 0 ? 'piece empty' : 'piece';
+                piece.innerText = value || '';
+                piece.addEventListener('click', () => movePiece(i));
+                puzzle.appendChild(piece);
+            });
+        }
+
+        function movePiece(index) {
+            const emptyIndex = grid.indexOf(0);
+            if ([index - 1, index + 1, index - 4, index + 4].includes(emptyIndex)) {
+                [grid[index], grid[emptyIndex]] = [grid[emptyIndex], grid[index]];
+                renderGrid();
+            }
+        }
+
+        renderGrid();
+    </script>
+</body>
+</html>

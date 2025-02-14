@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Engagement</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f3e5f5, #e1bee7);
+            color: #6a1b9a;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6a1b9a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logout-btn {
+            position: absolute;
+            right: 10px;
+            top: 80%;
+            transform: translateY(-50%);
+            background-color: #ff4081;
+            color: white;
+            padding: 2px 8px;
+            font-size: 0.4em;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #f50057;
+        }
+
+
+        nav {
+            background: voilet;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #5d4037;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s;
+        }
+        nav a:hover {
+            color: #d84315;
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #ede7f6;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4a148c;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        p, ul {
+            color: #4e342e;
+            font-size: 1.1em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #d1c4e9;
+            color: #4a148c;
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 6px solid #7e57c2;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        ul li:hover {
+            transform: scale(1.02);
+        }
+        ul li a {
+            color: #4a148c;
+            text-decoration: none;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+        .newsletter {
+            text-align: center;
+            padding: 30px;
+            background: #f3e5f5;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .newsletter input[type="email"] {
+            padding: 12px;
+            width: 70%;
+            max-width: 400px;
+            border: 1px solid #7e57c2;
+            border-radius: 8px;
+            margin-right: 10px;
+            font-size: 1em;
+        }
+        .newsletter button {
+            padding: 12px 25px;
+            background: #6a1b9a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .newsletter button:hover {
+            background-color: #4a148c;
+        }
+        .success-message {
+            display: none;
+            margin-top: 20px;
+            color: #4a148c;
+            font-size: 1.3em;
+            font-weight: bold;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #6a1b9a;
+            color: white;
+            font-size: 1.2em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function showSuccessMessage(event) {
+            event.preventDefault();
+            const successMessage = document.getElementById('success-message');
+            successMessage.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">Community Engagement 🌟</div>
+        <button class="logout-btn" onclick="window.location.href='welcomepage2.html'">Log Out</button>
+    </header>
+
+   <nav>
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+        <a href="games.html">Fun Games & Challenges</a>
+        <a href="recommendation.html">Recommendations</a>
+        <a href="selfcareresources.html">Self-Care Resources</a>
+        <a href="tipsroutines.html">Tips & Routines</a>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <h2>Blog Section 📖</h2>
+            <p>Read inspiring personal stories or gain insights from guest bloggers on their self-care journeys. Discover diverse perspectives and tips to enhance your own routine.</p>
+            <ul>
+                <li><a href="https://www.unwind.blog/i-tried-journaling-for-a-month-here-s-how-it-changed-my-life">"How Journaling Changed My Life" ✍️</a></li>
+                <li><a href="https://example.com/morning-rituals" target="_blank">"5-Minute Morning Rituals for Busy People" ⏰</a></li>
+                <li><a href="https://example.com/mindfulness-modern-world" target="_blank">"Guest Post: Embracing Mindfulness in the Modern World" 🧘‍♀️</a></li>
+                <li><a href="https://example.com/self-care-while-traveling" target="_blank">"Self-Care While Traveling: Tips and Tricks" ✈️</a></li>
+                <li><a href="https://example.com/mental-health-and-nutrition" target="_blank">"How Nutrition Impacts Mental Health" 🥗</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Forum or Comment Section 💬</h2>
+            <p>Join the conversation! Share your own self-care tips, ask questions, or connect with like-minded individuals. Let this space be a hub of positivity and growth.</p>
+            <ul>
+                <li><a href="https://example.com/forum/relaxation-activities" target="_blank">"What's your go-to relaxation activity?" 🌿</a></li>
+                <li><a href="https://example.com/forum/self-care-habits" target="_blank">"Share a self-care habit you've recently started." ✨</a></li>
+                <li><a href="https://example.com/forum/wellness-books" target="_blank">"Looking for book recommendations on wellness." 📚</a></li>
+                <li><a href="https://example.com/forum/favorite-podcasts" target="_blank">"What are your favorite wellness podcasts?" 🎧</a></li>
+                <li><a href="https://example.com/forum/sleep-habits" target="_blank">"Tips for improving sleep quality." 😴</a></li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h2>Newsletter Signup 📬</h2>
+            <p>Stay updated with the latest self-care tips, motivational content, and blog posts delivered straight to your inbox.</p>
+            <form onsubmit="showSuccessMessage(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="success-message" class="success-message">
+                Successfully subscribed! Yay! 🎉
+            </div>
+        </div>
+    </div>
+    <footer>
+        Join our community and share the self-care journey together! 💕
+    </footer>
+</body>
+

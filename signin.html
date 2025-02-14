@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        /* Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Background Image */
+        body {
+            background: url('welcomeimg.jpg') no-repeat center center fixed; /* Replace with your image file */
+            background-size: cover;
+        }
+
+        /* Centering the Form */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Form Styling */
+        .form-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            text-align: center;
+        }
+
+        .form-box h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Input Group Styling */
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Button Styling */
+        .btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Forgot Password Link */
+        .forgot-link {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .forgot-link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .forgot-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Sign In</h1>
+            <form onsubmit="return validateSignIn()">
+                <!-- Email Input -->
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Password Input -->
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Sign In</button>
+                <p class="forgot-link"><a href="#">Forgot Password?</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validateSignIn() {
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value.trim();
+
+            // Check if email and password are provided
+            if (!email || !password) {
+                alert("Both email and password are required.");
+                return false;
+            }
+
+            // Validate email format
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Check if email and password match the specific credentials
+            let validEmail = "shaikhromaan665@gmail.com"; // Replace with your specific email
+            let validPassword = "romi";  // Replace with your specific password
+
+            if (email !== validEmail || password !== validPassword) {
+                alert("Invalid email or password.");
+                return false;
+            }
+
+            // If all validations pass, redirect to main.html
+            window.location.href = "main.html"; 
+            return false; // Prevent form submission
+        }
+    </script>
+</body>
+</html>

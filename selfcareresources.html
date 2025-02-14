@@ -1,0 +1,177 @@
+<html>
+<head>
+    <title>Self-Care Resources</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #fbe9e7, #ffccbc);
+            color: #4e342e;
+        }
+        header {
+            background-color: #d84315;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.2em;
+            position: sticky;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logout-btn {
+            position: absolute;
+            right: 10px;
+            top: 80%;
+            transform: translateY(-50%);
+            background-color: #ff4081;
+            color: white;
+            padding: 2px 8px;
+            font-size: 0.4em;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #f50057;
+        }
+
+
+ nav {
+            background: light green;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #5d4037;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s;
+        }
+        nav a:hover {
+            color: red;
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .section {
+            padding: 20px;
+            background: #ffe0b2;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #bf360c;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #ffab91;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #ffccbc;
+            color: #4e342e;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 5px solid #ff5722;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        ul li:hover {
+            transform: translateX(5px);
+            background-color: #ffd8c2;
+        }
+        ul li a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #d84315;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        footer a {
+            color: #ffccbc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            color: #ffe0b2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">Self-Care Resources</div>
+        <button class="logout-btn" onclick="window.location.href='welcomepage2.html'">Log Out</button>
+    </header>
+ <nav>
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+        <a href="games.html">Fun Games & Challenges</a>
+        <a href="recommendation.html">Recommendations</a>
+        <a href="selfcareresources.html">Self-Care Resources</a>
+        <a href="tipsroutines.html">Tips & Routines</a>
+    </nav>
+
+    <div class="container">
+        <!-- Guides Section -->
+        <div class="section">
+            <h2>Guides & Articles</h2>
+            <ul>
+                <li><a href="https://www.mindful.org/mindfulness-for-beginners/" target="_blank">The Power of Mindfulness: A Beginner's Guide</a></li>
+                <li><a href="https://www.psychologytoday.com/us/blog/making-change/201902/how-journaling-can-help-you" target="_blank">Journaling for Self-Reflection and Growth</a></li>
+                <li><a href="https://www.cdc.gov/physicalactivity/basics/pa-health/index.htm" target="_blank">The Benefits of Regular Physical Activity</a></li>
+            </ul>
+        </div>
+        <!-- Printable Planners Section -->
+        <div class="section">
+            <h2>Printable Planners</h2>
+            <ul>
+                <li><a href="https://www.canva.com/planners/templates/" target="_blank">Self-Care Routine Template</a></li>
+                <li><a href="https://www.vertex42.com/ExcelTemplates/goal-planning.html" target="_blank">Goal-Setting Worksheet</a></li>
+                <li><a href="https://onplanners.com/templates/habit-trackers" target="_blank">Habit Tracker for Better Well-Being</a></li>
+            </ul>
+        </div>
+        <!-- Book Recommendations Section -->
+        <div class="section">
+            <h2>Book Recommendations</h2>
+            <ul>
+                <li><a href="https://jamesclear.com/atomic-habits" target="_blank">Atomic Habits by James Clear</a></li>
+                <li><a href="https://gretchenrubin.com/books/the-happiness-project/about-the-book/" target="_blank">The Happiness Project by Gretchen Rubin</a></li>
+                <li><a href="https://brenebrown.com/book/the-gifts-of-imperfection/" target="_blank">The Gifts of Imperfection by Brené Brown</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        Explore these resources to enhance your self-care journey! ✨
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloring Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(10, 50px);
+            grid-gap: 5px;
+        }
+
+        .cell {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        .cell:hover {
+            opacity: 0.8;
+        }
+
+        .palette {
+            display: flex;
+            margin: 20px 0;
+            gap: 10px;
+        }
+
+        .color {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid #ddd;
+        }
+
+        .color.active {
+            border: 3px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coloring Game</h1>
+    <div class="palette">
+        <div class="color" style="background-color: red;" data-color="red"></div>
+        <div class="color" style="background-color: blue;" data-color="blue"></div>
+        <div class="color" style="background-color: green;" data-color="green"></div>
+        <div class="color" style="background-color: yellow;" data-color="yellow"></div>
+        <div class="color" style="background-color: purple;" data-color="purple"></div>
+    </div>
+    <div class="grid"></div>
+
+    <script>
+        // Create grid
+        const grid = document.querySelector('.grid');
+        for (let i = 0; i < 100; i++) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+            grid.appendChild(cell);
+        }
+
+        // Handle palette selection
+        const colors = document.querySelectorAll('.color');
+        let selectedColor = 'red';
+
+        colors.forEach(color => {
+            color.addEventListener('click', () => {
+                document.querySelector('.color.active')?.classList.remove('active');
+                color.classList.add('active');
+                selectedColor = color.dataset.color;
+            });
+        });
+
+        // Handle cell coloring
+        const cells = document.querySelectorAll('.cell');
+        cells.forEach(cell => {
+            cell.addEventListener('click', () => {
+                cell.style.backgroundColor = selectedColor;
+            });
+        });
+
+        // Set the default active color
+        document.querySelector('.color').classList.add('active');
+    </script>
+</body>
+</html>

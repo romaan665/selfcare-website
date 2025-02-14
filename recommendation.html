@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Care Features</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #e0f7fa, #b3e5fc);
+            color: #01579b;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0288d1;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5em;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .logout-btn {
+            position: absolute;
+            right: 10px;
+            top: 80%;
+            transform: translateY(-50%);
+            background-color: #ff4081;
+            color: white;
+            padding: 2px 8px;
+            font-size: 0.4em;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #f50057;
+        }
+
+
+ nav {
+            background: light green;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #5d4037;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.2s;
+        }
+        nav a:hover {
+            color: blue;
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .section {
+            padding: 20px;
+            background: #e1f5fe;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #0277bd;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        p, ul {
+            color: #37474f;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #b3e5fc;
+            color: #01579b;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 6px solid #4fc3f7;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .playlist iframe {
+            width: 100%;
+            height: 80px;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0288d1;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.2em;
+        }
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">Self-Care Recommendations 🌟</div>
+        <button class="logout-btn" onclick="window.location.href='welcomepage2.html'">Log Out</button>
+    </header>
+
+
+ <nav>
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+        <a href="games.html">Fun Games & Challenges</a>
+        <a href="recommendation.html">Recommendations</a>
+        <a href="selfcareresources.html">Self-Care Resources</a>
+        <a href="tipsroutines.html">Tips & Routines</a>
+    </nav>
+    <div class="container">
+        <div class="section">
+            <h2><span class="emoji">💬</span> Quotes & Affirmations</h2>
+            <ul>
+                <li><span class="emoji">🌟</span> <a href="https://www.goodreads.com/quotes" target="_blank">Inspirational Quotes</a></li>
+                <li><span class="emoji">🌈</span> <a href="https://www.affirmations.dev/" target="_blank">Daily Affirmations</a></li>
+                <li><span class="emoji">💖</span> <a href="https://www.brainyquote.com/" target="_blank">Motivational Sayings</a></li>
+            </ul>
+        </div>
+        <div class="section playlist">
+            <h2><span class="emoji">🎵</span> Mood-Boosting Playlists</h2>
+            <p>Relax and rejuvenate with these curated playlists:</p>
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3rxVfibe1L0" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYBO1MoTDhZI" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="section">
+            <h2><span class="emoji">🛁</span> DIY Beauty Recipes</h2>
+            <ul>
+                <li><span class="emoji">🥣</span> <strong>Hydrating Face Mask:</strong> <a href="https://www.healthline.com/health/hydrating-face-mask-recipes" target="_blank">Get the Recipe</a></li>
+                <li><span class="emoji">🧂</span> <strong>Exfoliating Scrub:</strong> <a href="https://www.byrdie.com/diy-body-scrubs-5201171" target="_blank">Find Instructions</a></li>
+                <li><span class="emoji">🛀</span> <strong>Relaxing Bath Bombs:</strong> <a href="https://www.thesprucecrafts.com/diy-bath-bomb-recipes-5178595" target="_blank">Learn How</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2><span class="emoji">🛍️</span> Self-Care Products</h2>
+            <ul>
+                <li><span class="emoji">📚</span> <strong>Books:</strong> <a href="https://www.amazon.com/Four-Agreements-Practical-Personal-Freedom/dp/1878424319" target="_blank">The Four Agreements</a></li>
+                <li><span class="emoji">🧴</span> <strong>Skincare:</strong> <a href="https://www.sephora.com/" target="_blank">Shop Skincare</a></li>
+                <li><span class="emoji">🕯️</span> <strong>Candles:</strong> <a href="https://www.yankeecandle.com/" target="_blank">Explore Candles</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2><span class="emoji">📅</span> Workshops</h2>
+            <p>Enhance your self-care journey with our workshops:</p>
+            <ul>
+                <li><span class="emoji">🧘‍♀️</span> <strong>Yoga for Beginners:</strong> <a href="https://www.yogawithadriene.com/" target="_blank">Join Here</a></li>
+                <li><span class="emoji">🌱</span> <strong>Stress Management:</strong> <a href="https://www.mindful.org/category/meditation/" target="_blank">Learn Techniques</a></li>
+                <li><span class="emoji">🧑‍🔬</span> <strong>DIY Skincare:</strong> <a href="https://www.udemy.com/topic/diy-beauty-products/" target="_blank">Start Learning</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        Nurture yourself with these enriching self-care features! 🌸💆‍♀️
+    </footer>
+</body>
+</html>
